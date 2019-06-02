@@ -1,0 +1,2 @@
+# CMODA7_AD9959_EVAL
+Xilinx 7 Series FPGA CMOD A7-35T control on AD9959_EVAL 4 Channel DDS
