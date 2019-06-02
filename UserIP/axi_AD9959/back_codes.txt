@@ -1,0 +1,217 @@
+//                        {"CONFIG",16'b?}://command:CONFIG!
+//                            begin
+//                            COM_COMMAND_STATE<=PARAMETERLOADING;
+//                            UART_WRITE<=1'b1;//reply from fpga always in 32 bit version
+//                            REPLY<="No.DATA?";
+//                            p_REPLY<=3'b111;//then go to the IDLE state to check status
+//                            p_number_memoryBCD<=2'b11;
+//                            number_MemoryBCD<=16'b0;
+//                            PARAMETERs<=4'h0;
+//                            end
+//                        {"FPGA",32'b?}://Control AD9959 by fpga
+//                            begin
+//                            REPLY<="FPGA!!!!";
+//                            p_REPLY<=3'b111;
+//                            UART_WRITE<=1'b1;
+//                            READWRITE_STATE[2]<=1'b1;//go to ad9959 command
+//                            AD9959COMMAND<=3'b001;//transfer from pc to fpga
+//                            AD9959COMMANDCOUNTER<=3'b000;//start of the state machine
+//                            end
+//                        {"PC",48'b?}://Control AD9959 by Computer software
+//                            begin
+//                            REPLY<="PC!!!!!!";
+//                            p_REPLY<=3'b111;
+//                            UART_WRITE<=1'b1;
+//                            READWRITE_STATE[2]<=1'b1;//go to ad9959 command
+//                            AD9959COMMAND<=3'b011;//transfer from fpga to pc;
+//                            AD9959COMMANDCOUNTER<=3'b000;//start of the state machine
+//                            end
+//                        {"CHECK",24'b?}://Reply all the data that being loaded
+//                            begin
+//                            p_readMemory<=10'b0;
+//                            REPLY<="MEMORY::";
+//                            MemoryRead=1'b1;
+//                            p_REPLY<=3'b111;
+//                            UART_WRITE<=1'b1;
+//                            FRAM_addr24<=10'b0;
+//                            TRAM_addr24<=10'b0;
+//                            end
+//                        {"CONTROL",8'b?}:
+//                            begin
+//                            REPLY<="MODE#???";
+//                            p_REPLY<=3'b111;
+//                            UART_WRITE<=1'b1;
+//                            PARAMETERs<=4'h1;
+//                            COM_COMMAND_STATE<=PARAMETERLOADING;
+//                            end
+                        
+//                PARAMETERLOADING:
+//                    begin
+//                    READWRITE_STATE[1]<=1'b0;//turn off read state machine
+//                    case(PARAMETERs)
+//                    4'h0:
+//                        begin
+//                        number_MemoryBCD[{p_number_memoryBCD,2'b00}+:4]<=UART_RXDATA[3:0];
+//                        if(p_number_memoryBCD==2'b00)
+//                            begin
+//                            p_number_memoryBCD<=2'b11;
+//                            if({number_MemoryBCD[15:4],UART_RXDATA[3:0]}<={4'd1,4'd0,4'd2,4'd4})
+//                                begin
+//                                number_Memory<=number_MemoryBCD[15:12]*1000+number_MemoryBCD[11:8]*100+number_MemoryBCD[7:4]*10+UART_RXDATA[3:0]-1'b1;
+//                                COM_COMMAND_STATE<=DATALOADING;//valid loading 
+//                                REPLY<="TimeFreq";//reply to the computer;
+//                                p_REPLY<=3'b111;
+//                                UART_WRITE<=1'b1;
+//                                p_Memory<=10'b0;
+//                                pp_Memory<=3'b111;
+//                                DATAs<=4'h0;
+//                            end
+//                            else
+//                                begin
+//                                COM_COMMAND_STATE<=COMMANDLOADING;//invalid loading
+//                                REPLY<="Invalid!";//reply to the computer;
+//                                p_REPLY<=3'b111;
+//                                UART_WRITE<=1'b1;
+//                                end
+//                            end
+//                        else
+//                            begin
+//                            p_number_memoryBCD<=p_number_memoryBCD-1'b1;
+//                            end                        
+//                        end
+//                    4'h1:
+//                        begin
+//                        COM_COMMAND_STATE<=COMMANDLOADING;
+//                        p_REPLY<=3'b111;
+//                        UART_WRITE<=1'b1;
+//                        case(UART_RXDATA[3:0])
+//                        4'h0://frequency hopping in single tone mode
+//                            begin
+//                            CONTROLMODE<=UART_RXDATA[3:0];
+//                            REPLY<={"CONTROL",4'h3,UART_RXDATA[3:0]};
+//                            cfr[23:22]<=2'b00;//no modulation
+//                            cfr[5]<=1'b0;//match the pipe line
+//                            cfr[14]<=1'b0;//diable linear sweep
+//                            READWRITE_STATE[2]<=1'b1;//go to ad9959 command
+//                            AD9959COMMAND<=3'b101;//one single update and io update;
+//                            AD9959COMMANDCOUNTER<=3'b000;//start of the state machine
+//                            end
+//                        default:
+//                            begin
+//                            REPLY<="Invalid!";
+//                            end
+//                        endcase
+//                        end
+//                    endcase
+
+//                    end
+//                DATALOADING:
+//                    begin
+//                  case(DATAs)
+//                  4'h0://time freqeuncy loading
+//                    begin  
+//                    case(MemoryAccess24)
+//                    4'h0:
+//                        begin
+//                        if(pp_Memory[2]==1'b1)
+//                            begin
+//                            Tloading[{pp_Memory[1:0],3'b000}+:8]<=UART_RXDATA[7:0];
+//                            pp_Memory<=pp_Memory-1'b1;
+//                            READWRITE_STATE[1]<=1'b0;//turn off read state machine
+//                            end
+//                        else
+//                            begin
+//                            Floading[{pp_Memory[1:0],3'b000}+:8]<=UART_RXDATA[7:0];
+//                            pp_Memory<=pp_Memory-1'b1;
+//                            if(pp_Memory[1:0]==2'b00)
+//                                begin
+//                                FRAM_we24<=1;//turn on FRAM write enable
+//                                TRAM_we24<=1;//turn on TRAM write enable                    
+//                                TRAM_di24<=Tloading;
+//                                FRAM_di24<={Floading[31:8],UART_RXDATA[7:0]};                                
+//                                MemoryAccess24<=MemoryAccess24+1;
+//                                UART_R_EN<=1'b0;
+//                                end
+//                            else
+//                                begin
+//                                READWRITE_STATE[1]<=1'b0;//turn off read state machine
+//                                end
+//                            end
+//                        end                        
+                        
+//                    4'h1:
+//                        begin
+//                        FRAM_we24<=0;//turn off FRAM write enable
+//                        TRAM_we24<=0;//turn off TRAM write enable                    
+//                        UART_R_EN<=1'b1;
+//                        READWRITE_STATE[1]<=1'b0;//turn off read state machine
+//                        MemoryAccess24<=4'b0;
+//                        if(p_Memory==number_Memory)
+//                            begin
+//                            p_Memory<=10'b0;
+//                            FRAM_addr24<=10'b0;
+//                            TRAM_addr24<=10'b0;
+//                            REPLY<="Complete";
+//                            p_REPLY<=3'b111;
+//                            UART_WRITE<=1'b1;
+//                            number_data<=number_Memory;
+//                            COM_COMMAND_STATE<=COMMANDLOADING;
+//                            AD9959COMMAND<=3'b100;
+//                            AD9959COMMANDCOUNTER<=3'b000;
+//                            p_MemFT<=4'b0;
+//                            READWRITE_STATE[2]=1'b1;
+//                            p_data<=0;
+//                            end
+//                        else
+//                            begin
+//                            TRAM_addr24<=TRAM_addr24+1;
+//                            FRAM_addr24<=FRAM_addr24+1;
+//                            p_Memory<=p_Memory+1'b1;
+//                            end                                
+//                        end
+//                    endcase
+//                    end
+//                  4'h1://amplitude loading
+//                    begin
+//                    end
+//                  endcase
+//                    end
+//                default:
+//                    begin
+//                    end
+//                endcase
+//                end      
+//            else
+//                begin
+//                end
+//            end
+//        else
+//            begin
+//            UART_RXDATA<=UART_rxdata;
+//            end
+//        
+
+
+////////////////////////////////////////////////////////////////////////////////     
+  //    task countup(
+//    inout [7:0] counterBCD
+//    );
+//    begin
+//    if(counterBCD[3:0]>=9)
+//        begin
+//        counterBCD[3:0]<=4'b0;
+//        if(counterBCD[7:4]>=9)
+//            begin
+//            counterBCD[7:4]<=4'b0;
+//            end    
+//        else
+//            begin
+//            counterBCD[7:4]<=counterBCD[7:4]+1'b1;
+//            end
+//        end                   
+//    else
+//        begin
+//        counterBCD[7:0] <= counterBCD[7:0]+1'b1; 
+//        end
+//    end
+//    endtask 

@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>mit.edu</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>axi_AD9959</spirit:name>
+  <spirit:version>2.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">10</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>reset_dds</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset_dds</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>axi_AD9959_v2_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>74b91758</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>axi_AD9959_v2_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>74b91758</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>877e7405</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>dda4df14</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>trigger</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reference</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sdio_check</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>csb_check</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sclk_check</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w7_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w10_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w1_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w2_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w3_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w10_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w1_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w2_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>w3_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sdio</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>csb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset_dds</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pwr_dwn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>io_update</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">6</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/AD9959Master_2_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/CommunicationPCFPGAAD9959_2_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/axi_AD9959_v2_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sBRAM12.V</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/axi_AD9959_v2_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_ce49a46c</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/AD9959Master_2_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/CommunicationPCFPGAAD9959_2_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/axi_AD9959_v2_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sBRAM12.V</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/axi_AD9959_v2_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/axi_AD9959_v1_0/data/axi_AD9959.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/axi_AD9959_v1_0/data/axi_AD9959.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/axi_AD9959_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/axi_AD9959_v1_0/src/axi_AD9959.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/axi_AD9959_v1_0/src/axi_AD9959.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/axi_AD9959_v2_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_dda4df14</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>axi_lite interface AD9959 fast logic control and sequence Version 2.0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">6</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">axi_AD9959_v2_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">artix7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>axi_AD9959_v2.0</xilinx:displayName>
+      <xilinx:vendorDisplayName>Harvard-MIT CUA</xilinx:vendorDisplayName>
+      <xilinx:vendorURL>http://www.rle.mit.edu/eapg/</xilinx:vendorURL>
+      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:axi_AD9959:2.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2019-05-30T21:58:06Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8c6f13_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1053a808_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7256e23d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76b7d489_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58c5a28_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30f21d74_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d6cc37e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4942d1aa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5086ceb2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e70015d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6faa529e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c713876_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ab9ace_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b856c09_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@756e5e08_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73474b5d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d9f618_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@adcc84a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@180b33bf_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b9f777e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78f12945_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3eff45_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ae9ba9a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11e86456_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61343be6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d2094e4_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fe1632_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e87f56f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69edda28_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@130b1027_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7db112de_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bcfb7a7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b2b1253_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7506fd29_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d63dcb5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36665ae_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a17ad8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60c4ffa2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162b6559_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b8bf1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30649538_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f66b342_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@542e8d6d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@938819d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@386d015d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d038f51_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762fe2c9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e6fb7dc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63632106_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@262379f5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2870ff3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5847ca16_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2252470b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bddca2c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2220ee8f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25a88ddc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@857bda9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5e9854_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9dac73a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a3a69b1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33288167_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e7e8e67_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb1c8ca_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d0277ab_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@140c18e8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@279f6c58_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bd4d11e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a933702_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93b6664_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42853dfa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c318079_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dd33f5c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d7165e2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c4715e0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@295a9486_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22d95096_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c77b42_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f108a0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d85c9f0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b5a12b1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12ccca93_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c7c42e9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35fc75a7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642a2342_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6facfdac_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a89ea5a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23eda59_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f8d05df_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d664e57_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b54712a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f5d544a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a358ec0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4071bfe2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13e85e77_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f00af46_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@725421f1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2223816_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b8b3565_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cf4f963_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f36d358_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5930de_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25166e94_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@235bc3d9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ce4fa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@554d73e3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@680df5ba_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a0ea481_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46f0d724_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43fe8072_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@309523b9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4efadc5d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f1d5b98_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@405bcc3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@213c4ece_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3df8ac85_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79b978be_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e3277b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f00c76b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb25cef_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40a047cc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d67050_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7480bde_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71448993_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46a014ec_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e323f51_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a0b77c4_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d5629d9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48ffb4e1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d89ba0a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3461ce45_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dad0275_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2be4dcc8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26bd4501_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ed31597_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25bd43a0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c4bacc1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e902877_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32bbd679_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20738dc2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e315f5a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5425a7b7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a63d0dc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbbeb47_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35f84da0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7807514a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c92a208_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e20d965_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456c4420_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f28e8c2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c73ba42_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e072a26_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78c4b017_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f07363_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75d17037_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bd11bf9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fe0f7f3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79bbf574_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56878d82_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@145f6125_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dfa4609_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dbfcc75_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a080296_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d1204c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6adfc9f8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f581031_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6527c3b5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6573a440_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be62cdd_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fc4c931_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d3d8fe3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5536231b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5081ac3b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2087fe7e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3720e27f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4229eb57_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33fd316a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1413e861_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb34eb0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e18351d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@742a7d13_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d5b5c4b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@425012d5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20f1bec7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@acfa24e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41c9dfd_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b16b66c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f6246e7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7186f69b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a11164d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35e4d30_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b834e6b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8b95cde_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@232457fa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d48c8ad_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2570f29_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29b4fa42_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3087e9fa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649c265c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a4ffec6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79e38b10_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8de1fc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f0f8abb_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57179c12_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc343a9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20681ccc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2342faec_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6978e187_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2813eea0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f45e466_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@678a0880_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3af50e16_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54f6fdf9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40afc28b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@423b1d54_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442f7299_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67aa10a2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@635fa71c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49301e38_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d72d0f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2410bbbc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d1594ae_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d694b17_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22eb823_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55fce8d9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d102ffa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@595e5e01_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14de4714_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7093eae9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1981a906_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64c2b5ed_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@588a44f3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f49661_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57407f2b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@731b67c5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2532cf06_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c5c0649_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f217ca8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10798fdb_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bfb070d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ddc26d5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@127e8544_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17508d4c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b332424_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d89f3c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bb36dde_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@437460b5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21fb633e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36a1622c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ca83e3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62393744_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ab0a01d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20f84e44_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c33df6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6772ea1c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d8f6dec_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e600b16_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bd4145_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c9cbef0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77e6d345_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa77bf6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6af849a8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46de971c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d69326_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31553fbd_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@449ddd00_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a9c8a8d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75da20bf_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ec6ceff_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@394088d6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5059e102_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3da6a612_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e186ac0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a6d7b3c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5674443e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2caae4f3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61c9af12_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1396eb3d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@267c8674_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68642048_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7581f649_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66adc5a5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642ce3c9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@af3ba15_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d51ee4_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66972b53_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6efa8717_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46863fb3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5747f1a4_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2df51b9c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d3cd0bc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4113197c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b072ae5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6483b08b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438d7e3d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c423406_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dc17c5a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46c20796_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dacc28e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@689ef3e8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f382386_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263ef76f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a4101c6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ef11efc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3be5e59a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@448963c7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33fa9e05_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fd9d528_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23c29f9a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a307ed1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60758ffa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44b0cac2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a8a71be_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c39f931_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68f136f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28a21631_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b12226f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71be1bc5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f366b9e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@454651c2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@229fd390_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c3d6fa1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7168f690_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@254c8f67_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cae9d31_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f234fd2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ab958a8_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3912f8ae_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@561eac72_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@572c6340_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7962d25c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68c1af76_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e7c71be_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1561e109_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39357208_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@318a703e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f9e98c3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aeddf7e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26adeade_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37627414_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@444b8673_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@121e8694_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3da7913b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c197c65_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@126841ee_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fa8ecad_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19cdddac_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@151365cf_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@122fa9cf_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b7af6bd_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cf48dc2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@190743a3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2292ee08_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b1a1be2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@488ab49d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f2dd98_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39ec0614_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b92da72_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ee086a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a4f432d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@473df327_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b6ac6c5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20925f4b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22d53f65_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@139fa292_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6308a4cb_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a4cad1d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@466957c0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a6641d5_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b71a587_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d30f5aa_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39ef1d20_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@344c0c29_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b611eac_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5becb0_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47596227_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2949c752_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60eaf335_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4050db6e_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5645299f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25e8d8cc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13584ccd_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62c55a77_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a7b4735_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@578a3997_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@533edfdf_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@517de0b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ef006ce_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13139067_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74faa2e7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a64f787_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b2a58be_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56dc0f0f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19f97d7b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb5cc50_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@138e3808_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@387e13c3_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75a2d17a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3d717c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3035b319_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff46bb_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fdfc718_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370f2f9c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b2eb7b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c1cb5c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@139dfadc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64efb8d4_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43e320f2_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2a2e24_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fb79d67_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63e4c0c6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@278cbe0f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@537bd802_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2991c91b_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1178b94d_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aef26ad_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39a9e425_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a8d86c9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d0fc73_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fe2c448_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9c3f7b7_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57d5747a_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26b45184_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@462a940c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53995dc6_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a32169f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f17d457_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69649467_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67f8c80_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e4b3c2f_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393a7b77_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ae22f70_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df588f9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@625c1503_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eda1bb1_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d5d27cc_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bcce79_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@409373e9_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@102ab08c_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f9916ec_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76372869_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a224563_ARCHIVE_LOCATION">c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="447f12fd"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5da1f86e"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="bcade1ac"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e7b50784"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="b3ddb366"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

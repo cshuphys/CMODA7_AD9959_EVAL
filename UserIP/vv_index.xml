@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP">
+	</Repository>
+	<IP>
+		<VLNV value="mit.edu:user:axi_AD9959:2.0">
+		</VLNV>
+		<DisplayName value="axi_AD9959_v2.0">
+		</DisplayName>
+		<Description value="axi_lite interface AD9959 fast logic control and sequence Version 2.0">
+		</Description>
+		<CoreRevision value="16">
+		</CoreRevision>
+		<ComponentPath value="axi_AD9959/axi_AD9959_2.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<UpgradesFrom>
+			<Upgrade value="xilinx.com:user:axi_AD9959:2.0">
+			</Upgrade>
+		</UpgradesFrom>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+		<VendorDisplayName value="Harvard-MIT CUA">
+		</VendorDisplayName>
+		<VendorURL value="http://www.rle.mit.edu/eapg/">
+		</VendorURL>
+	</IP>
+</Index>
+

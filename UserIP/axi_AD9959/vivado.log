@@ -1,0 +1,576 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 21 22:57:12 2019
+# Process ID: 3184
+# Current directory: C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9236 C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\UserIP\axi_AD9959\edit_axi_AD9959_v2_0.xpr
+# Log file: C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/vivado.log
+# Journal file: C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/edit_axi_AD9959_v2_0.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v:]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-593] The IP 'axi_AD9959_v1.0', version 1.0, is no longer found in the user IP repository c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP. It will not be included in the IP Catalog. (It used to be found at c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_1.0.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 671.238 ; gain = 91.586
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\UserIP\axi_AD9959\axi_AD9959_2.0\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property source_mgmt_mode All [current_project]
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0'. ''c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0' is not valid: Path is contained within another repository.'
+0
+set_property  ip_repo_paths  c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959'.)
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959'.)
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {c:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\UserIP\axi_AD9959\axi_AD9959_2.0\mit.edu_user_axi_AD9959_2.0.zip} [ipx::current_core]
+ipx::unload_core component_1
+ipx::open_ipxact_file {C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\UserIP\axi_AD9959\axi_AD9959_2.0\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {c:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\UserIP\axi_AD9959\axi_AD9959_2.0\mit.edu_user_axi_AD9959_2.0.zip} [ipx::current_core]
+ipx::unload_core component_2
+ipx::open_ipxact_file {C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\UserIP\axi_AD9959\axi_AD9959_2.0\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+close_project
+open_project C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_bd_design "CmodA7_AD9959_Mb"
+Wrote  : <C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\CmodA7_Microblaze_AD9959_DDS_2.srcs\sources_1\bd\CmodA7_AD9959_Mb\CmodA7_AD9959_Mb.bd> 
+create_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1052.535 ; gain = 66.605
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {1} axi_periph {Enabled} cache {None} clk {New Clocking Wizard (100 MHz)} debug_module {Debug Only} ecc {None} local_mem {32KB} preset {None}}  [get_bd_cells microblaze_0]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+apply_bd_automation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1320.664 ; gain = 235.699
+regenerate_bd_layout
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+save_bd_design
+Wrote  : <C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\CmodA7_Microblaze_AD9959_DDS_2.srcs\sources_1\bd\CmodA7_AD9959_Mb\CmodA7_AD9959_Mb.bd> 
+Wrote  : <C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ui/bd_50085423.ui> 
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_1/clock_CLK_IN1" -diagram "CmodA7_AD9959_Mb" 
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_1]
+INFO: [board_interface 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_1]
+INFO: [board_interface 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_interface 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_interface 100-100] connect_bd_net /sys_clock /clk_wiz_1/clk_in1
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 12000000 /sys_clock
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset (BTN0) ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/reset]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_1]
+INFO: [board_rule 100-100] create_bd_port -dir I reset -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset
+INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_1/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset (BTN0) ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /rst_clk_wiz_1_100M]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /rst_clk_wiz_1_100M]
+INFO: [board_rule 100-100] connect_bd_net /reset /rst_clk_wiz_1_100M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+delete_bd_objs [get_bd_cells xlconstant_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2.5 370 223} [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {5} CONFIG.C_DOUT_DEFAULT {0xFFFFFFFF} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+</axi_gpio_0/S_AXI/Reg> is being mapped into </microblaze_0/Data> at <0x40000000 [ 64K ]>
+regenerate_bd_layout
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv mit.edu:user:axi_AD9959:2.0 axi_AD9959_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_AD9959_0/S00_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_AD9959_0/S00_AXI]
+</axi_AD9959_0/S00_AXI/S00_AXI_reg> is being mapped into </microblaze_0/Data> at <0x44A00000 [ 64K ]>
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\CmodA7_Microblaze_AD9959_DDS_2.srcs\sources_1\bd\CmodA7_AD9959_Mb\CmodA7_AD9959_Mb.bd> 
+Wrote  : <C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ui/bd_50085423.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+</axi_uartlite_0/S_AXI/Reg> is being mapped into </microblaze_0/Data> at <0x40600000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_uartlite_0]
+INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart
+INFO: [board_rule 100-100] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins microblaze_0_xlconcat/In1]
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\CmodA7_Microblaze_AD9959_DDS_2.srcs\sources_1\bd\CmodA7_AD9959_Mb\CmodA7_AD9959_Mb.bd> 
+Wrote  : <C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ui/bd_50085423.ui> 
+regenerate_bd_layout -routing
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/trigger]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/btn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w10_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w1_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w2_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w3_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/reference]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/sdio_check]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/csb_check]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/sclk_check]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w7_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w10_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w1_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w2_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/w3_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/sdio]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/p]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/sclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/csb]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/reset_dds]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/pwr_dwn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_AD9959_0/io_update]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\CmodA7_Microblaze_AD9959_DDS_2.srcs\sources_1\bd\CmodA7_AD9959_Mb\CmodA7_AD9959_Mb.bd> 
+Wrote  : <C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ui/bd_50085423.ui> 
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ui/bd_50085423.ui> 
+validate_bd_design
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1458.148 ; gain = 0.000
+set_property synth_checkpoint_mode None [get_files  C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/CmodA7_AD9959_Mb.bd]
+generate_target all [get_files  C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/CmodA7_AD9959_Mb.bd]
+INFO: [BD 41-1662] The design 'CmodA7_AD9959_Mb.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pro\Documents\CmodA7_Microblaze_AD9959_DDS_2\CmodA7_Microblaze_AD9959_DDS_2.srcs\sources_1\bd\CmodA7_AD9959_Mb\CmodA7_AD9959_Mb.bd> 
+Wrote  : <C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ui/bd_50085423.ui> 
+VHDL Output written to : C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/synth/CmodA7_AD9959_Mb.v
+VHDL Output written to : C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/sim/CmodA7_AD9959_Mb.v
+VHDL Output written to : C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/hdl/CmodA7_AD9959_Mb_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_AD9959_0 .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2018.3/data/boards/board_files/Digilennt/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/hw_handoff/CmodA7_AD9959_Mb.hwh
+Generated Block Design Tcl file C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/hw_handoff/CmodA7_AD9959_Mb_bd.tcl
+Generated Hardware Definition File C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/synth/CmodA7_AD9959_Mb.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1507.543 ; gain = 48.898
+export_ip_user_files -of_objects [get_files C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/CmodA7_AD9959_Mb.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/CmodA7_AD9959_Mb.bd] -directory C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.ip_user_files -ipstatic_source_dir C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.cache/compile_simlib/modelsim} {questa=C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.cache/compile_simlib/questa} {riviera=C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.cache/compile_simlib/riviera} {activehdl=C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/CmodA7_AD9959_Mb.bd] -top
+add_files -norecurse C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/hdl/CmodA7_AD9959_Mb_wrapper.v
+launch_runs synth_1 -jobs 3
+[Tue May 21 23:14:06 2019] Launched synth_1...
+Run output will be captured here: C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 375 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_0/CmodA7_AD9959_Mb_microblaze_0_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_0/CmodA7_AD9959_Mb_microblaze_0_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_dlmb_v10_0/CmodA7_AD9959_Mb_dlmb_v10_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_dlmb_v10_0/CmodA7_AD9959_Mb_dlmb_v10_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_ilmb_v10_0/CmodA7_AD9959_Mb_ilmb_v10_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_ilmb_v10_0/CmodA7_AD9959_Mb_ilmb_v10_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_mdm_1_0/CmodA7_AD9959_Mb_mdm_1_0.xdc] for cell 'CmodA7_AD9959_Mb_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_mdm_1_0/CmodA7_AD9959_Mb_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2220.801 ; gain = 562.781
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_mdm_1_0/CmodA7_AD9959_Mb_mdm_1_0.xdc] for cell 'CmodA7_AD9959_Mb_i/mdm_1/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_clk_wiz_1_0/CmodA7_AD9959_Mb_clk_wiz_1_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_clk_wiz_1_0/CmodA7_AD9959_Mb_clk_wiz_1_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_clk_wiz_1_0/CmodA7_AD9959_Mb_clk_wiz_1_0.xdc] for cell 'CmodA7_AD9959_Mb_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_clk_wiz_1_0/CmodA7_AD9959_Mb_clk_wiz_1_0.xdc:57]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.833330 which will be rounded to 0.833 to ensure it is an integer multiple of 1 picosecond [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_clk_wiz_1_0/CmodA7_AD9959_Mb_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_clk_wiz_1_0/CmodA7_AD9959_Mb_clk_wiz_1_0.xdc] for cell 'CmodA7_AD9959_Mb_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0.xdc] for cell 'CmodA7_AD9959_Mb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0/CmodA7_AD9959_Mb_rst_clk_wiz_1_100M_0.xdc] for cell 'CmodA7_AD9959_Mb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_gpio_0_0/CmodA7_AD9959_Mb_axi_gpio_0_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_gpio_0_0/CmodA7_AD9959_Mb_axi_gpio_0_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_gpio_0_0/CmodA7_AD9959_Mb_axi_gpio_0_0.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_gpio_0_0/CmodA7_AD9959_Mb_axi_gpio_0_0.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_uartlite_0_0/CmodA7_AD9959_Mb_axi_uartlite_0_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_uartlite_0_0/CmodA7_AD9959_Mb_axi_uartlite_0_0_board.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_uartlite_0_0/CmodA7_AD9959_Mb_axi_uartlite_0_0.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_axi_uartlite_0_0/CmodA7_AD9959_Mb_axi_uartlite_0_0.xdc] for cell 'CmodA7_AD9959_Mb_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/constrs_1/imports/new/CMODA7.xdc]
+Finished Parsing XDC File [C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/constrs_1/imports/new/CMODA7.xdc]
+Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0_clocks.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0/CmodA7_AD9959_Mb_microblaze_0_axi_intc_0_clocks.xdc] for cell 'CmodA7_AD9959_Mb_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'CmodA7_AD9959_Mb_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2223.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2246.391 ; gain = 720.262
+launch_runs impl_1 -jobs 3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2252.652 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 2254.238 ; gain = 1.586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2257.246 ; gain = 0.000
+[Tue May 21 23:34:42 2019] Launched impl_1...
+Run output will be captured here: C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.runs/impl_1/runme.log
+open_bd_design {C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/CmodA7_AD9959_Mb.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Tue May 21 23:38:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 374 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.825 . Memory (MB): peak = 3164.906 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.825 . Memory (MB): peak = 3164.906 ; gain = 0.000
+Generating merged BMM file for the design top 'CmodA7_AD9959_Mb_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.srcs/sources_1/bd/CmodA7_AD9959_Mb/ip/CmodA7_AD9959_Mb_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3164.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 79 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  SRLC16E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 3164.906 ; gain = 197.039
+open_report: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3164.906 ; gain = 0.000
+open_hw
+file mkdir C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.sdk
+file copy -force C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.runs/impl_1/CmodA7_AD9959_Mb_wrapper.sysdef C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.sdk/CmodA7_AD9959_Mb_wrapper.hdf
+
+launch_sdk -workspace C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.sdk -hwspec C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.sdk/CmodA7_AD9959_Mb_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.sdk -hwspec C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.sdk/CmodA7_AD9959_Mb_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name axi_AD9959_v2_0_project -directory C:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/CmodA7_Microblaze_AD9959_DDS_2.tmp/axi_AD9959_v2_0_project c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pro/documents/cmoda7_microblaze_ad9959_dds_2/cmoda7_microblaze_ad9959_dds_2.tmp/axi_ad9959_v2_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3426.969 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/AD9959Master_2_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/CommunicationPCFPGAAD9959_2_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/src/sBRAM12.V:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pro/Documents/CmodA7_Microblaze_AD9959_DDS_2/UserIP/axi_AD9959/axi_AD9959_2.0/hdl/axi_AD9959_v2_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3426.969 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::reorder_files -before drivers/axi_AD9959_v1_0/src/axi_AD9959.h drivers/axi_AD9959_v1_0/src/axi_AD9959.h [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 22 00:53:58 2019...

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue May 21 23:03:26 2019">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="f7a4ab1a64574fc8a9954cfc8dcc7078" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="EditProperties" value="2" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="4" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="12" type="JavaHandler"/>
+<property name="ShowView" value="2" type="JavaHandler"/>
+<property name="ToggleViewNavigator" value="2" type="JavaHandler"/>
+<property name="ToolsSettings" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Handlers">
+<property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="1" type="GuiHandlerData"/>
+<property name="BaseDialog_APPLY" value="2" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="2" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_MESSAGES" value="5" type="GuiHandlerData"/>
+<property name="FileGroupFacetTable_FILE_GROUP_FACET_TABLE" value="4" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="81" type="GuiHandlerData"/>
+<property name="HCodeEditor_CLOSE" value="7" type="GuiHandlerData"/>
+<property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="3" type="GuiHandlerData"/>
+<property name="HInputHandler_DUPLICATE_SELECTION" value="1" type="GuiHandlerData"/>
+<property name="HInputHandler_INDENT_SELECTION" value="6" type="GuiHandlerData"/>
+<property name="HInputHandler_UNINDENT_SELECTION" value="4" type="GuiHandlerData"/>
+<property name="MainMenuMgr_EDIT" value="2" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="6" type="GuiHandlerData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="2" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="5" type="GuiHandlerData"/>
+<property name="MainMenuMgr_REPORTS" value="5" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TOOLS" value="1" type="GuiHandlerData"/>
+<property name="MainMenuMgr_WINDOW" value="5" type="GuiHandlerData"/>
+<property name="MainWinMenuMgr_LAYOUT" value="2" type="GuiHandlerData"/>
+<property name="MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE" value="2" type="GuiHandlerData"/>
+<property name="MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT" value="5" type="GuiHandlerData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="6" type="GuiHandlerData"/>
+<property name="PACommandNames_TOGGLE_VIEW_NAV" value="2" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="12" type="GuiHandlerData"/>
+<property name="PAViews_PACKAGE_IP" value="2" type="GuiHandlerData"/>
+<property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="19" type="GuiHandlerData"/>
+<property name="Project_AUTOMATIC_UPDATE_AND_COMPILE_ORDER" value="1" type="GuiHandlerData"/>
+<property name="Project_AUTOMATIC_UPDATE_MANUAL_COMPILE_ORDER" value="1" type="GuiHandlerData"/>
+<property name="RDICommands_PROPERTIES" value="2" type="GuiHandlerData"/>
+<property name="RDICommands_SETTINGS" value="2" type="GuiHandlerData"/>
+<property name="ReviewContentPanel_EDIT_PACKAGING_SETTINGS" value="1" type="GuiHandlerData"/>
+<property name="ReviewContentPanel_PACKAGE_IP" value="3" type="GuiHandlerData"/>
+<property name="ReviewContentPanel_RE_PACKAGE_IP" value="2" type="GuiHandlerData"/>
+<property name="ReviewContentPanel_ROOT_DIRECTORY" value="1" type="GuiHandlerData"/>
+<property name="SettingsDialog_PROJECT_TREE" value="2" type="GuiHandlerData"/>
+<property name="SettingsProjectIPPackagerPage_DELETE_PROJECT_AFTER_PACKAGING" value="1" type="GuiHandlerData"/>
+<property name="SettingsProjectIPRepositoryPage_REFRESH_ALL" value="1" type="GuiHandlerData"/>
+<property name="SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER" value="1" type="GuiHandlerData"/>
+<property name="SrcMenu_IP_HIERARCHY" value="2" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="58" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="49" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
